@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud-consumer" />
+        <module name="service-zuul" />
+        <module name="service-feign" />
+        <module name="service-producer1" />
+        <module name="book1" />
+        <module name="book" />
+        <module name="service-register-center" />
+        <module name="service-producer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gateway" target="1.8" />
+      <module name="service-config" target="1.8" />
+      <module name="service-consumer" target="1.8" />
+      <module name="service-managevoter" target="1.8" />
+      <module name="spring-cloud-consumer" target="1.5" />
+      <module name="taroco-gateway-zuul" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="book" options="-parameters" />
+      <module name="book1" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="service-config" options="-parameters" />
+      <module name="service-consumer" options="-parameters" />
+      <module name="service-feign" options="-parameters" />
+      <module name="service-managevoter" options="-parameters" />
+      <module name="service-producer" options="-parameters" />
+      <module name="service-producer1" options="-parameters" />
+      <module name="service-register-center" options="-parameters" />
+      <module name="service-zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

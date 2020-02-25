@@ -1,0 +1,16 @@
+server:
+  port: 80
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    config:
+      enabled: false
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+zuul:
+  routes:
+    service-feign: /service-feign/**
+  prefix: /api
